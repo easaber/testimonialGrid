@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Koh+Santepheap:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Asap Condensed', sans-serif;
+  font-family: 'Koh Santepheap', cursive;
+}
+.container{
+  display: grid;
+  grid-gap: 20px;
+  padding-block: 2rem;
+  width: min(95%, 78rem);
+  margin-inLine: auto;
+  grid-template-areas:
+    "one one two five"
+    "three four four five";
+}
+@media(max-width: 50em){
+  .container{
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five";
+  }
+}
+
+.Daniel-clofford{
+  grid-area: one;
+}
+.jonath-walter{
+  grid-area: two;
+}
+.jeanette-harmon{
+  grid-area: three;
+}
+.patric-abrams{
+  grid-area: four;
+}
+.kira-whittle{
+  grid-area: five;
+}
+.Daniel-clofford{
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 20px;
+  padding: 20px;
+  color: hsl(0, 0%, 100%);
+}
+#all-images{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.heading-image{
+display: flex;
+flex-direction: row;
+}
+.title-heading{
+  margin-left: 50px;
+}
+
+h3{
+  margin: 20px;
+}
+
+.jonathan-walter{
+  background-color: hsl(217, 19%, 35%);
+  padding: 20px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+.jeanette-harmon{
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.patric-abrams{
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.kira-whittle{
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 20px;
+}
